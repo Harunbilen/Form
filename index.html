@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form elements</title>
+    <style>
+        .div1{
+                width: 95%; margin-left: 2rem; margin-right: 2rem;
+        }
+        .label {
+          display: inline-block;
+          width: 100px;
+        }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <form action="">
+      <div style="border: 2px solid black">
+        <h1 style="text-align: center">
+          Clarusway Bootcamp Org. İşe Giriş Sözleşmesi
+        </h1>
+        <div class="div1">
+          <fieldset>
+            <legend>Sözleşme Onay</legend>
+            <input type="checkbox" name="onay" id="onay1" />
+            <label for="onay1"
+              >Aşağıdaki Bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi
+              onaylıyorum</label
+            >
+            <br />
+
+            <input type="submit" value="Formu Kaydet" />
+
+            <input type="submit" value="Formu Temizle" />
+          </fieldset>
+        </div>
+        <br />
+
+        <div class="div1">
+          <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <label for="number1" class="label">Form Güvenlik ID</label>
+            <input type="number" name="number" id="number1" placeholder="ID" />
+            <br />
+            <label for="ad1" class="label">Ad</label>
+            <input type="text" name="ad" id="ad1" />
+            <br />
+            <label for="soyad1" class="label">Soyad</label>
+            <input type="text" name="soyad" id="soyad1" />
+            <br />
+            <label for="number1" class="label">Yaş</label>
+            <input type="number" name="yaş" id="number1" /> <br />
+            <label for="mail1" class="label">Mail Adresi</label>
+            <input type="e-mail" name="email" id="mail1" /> <br />
+            <label for="foto1" class="label">Fotoğraf ekle</label>
+            <input type="file" name="fotoğraf" id="foto1" />
+          </fieldset>
+        </div>
+        <div class="div1">
+          <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <p><b>Mesleki deneyimler </b></p>
+            <label for="date1">Sektöre Giriş Tarihi</label>
+            <input type="date" name="tarih" id="date1" /> <br /><br>
+            <label for="deneyim">Sektör Deneyimi</label> <br>
+            <div style="padding-left: 8rem;">   
+            <input type="checkbox" name="deneyim" id="deneyim">1-5 yıl <br>
+            <input type="checkbox" name="deneyim" id="deneyim">6-10 yıl <br>
+            <input type="checkbox" name="deneyim" id="deneyim">11-15 yıl <br>
+            
+            <input type="checkbox" name="deneyim" id="deneyim">15+ </div>
+        
+            
+            <br>
+
+
+
+            <label for="dil">Proglama Dilleri</label>
+            <select name="dil" id="dil" size="3">
+              <option value="C#">C#</option>
+              <option value="PHP">PHP</option>
+              <option value="JavaScript">JavaScript</option>
+            </select>
+          </fieldset>
+        </div>
+
+        <div class="div1">
+          <fieldset>
+                <legend>Sözleşme içeriği</legend>
+            <label for="yorum"></label> <br />
+            <textarea name="yorum" id="yorum" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto magni dolorum nam ratione! Ipsum aperiam dolore error quia pariatur, similique quo. In iure et exercitationem cumque reprehenderit quas rem ut placeat commodi optio atque, officia perspiciatis ea vel similique vitae laudantium delectus ipsum, enim quidem eligendi! Enim, consequatur praesentium.</textarea>
+          </fieldset>
+        </div>
+        <div class="div1">
+                <fieldset>
+                       <legend>Mail listesi</legend>
+                       <label for="maile_ekle">Maile eklenmeyi <b>kabul ediyorum</b> </label> 
+                       <input type="checkbox" name="mail" id="maile_ekle"> <br>
+                       <label for="maile_ekle1">Maile eklenmeyi <u><b>kabul etmiyorum</b> </u> </label> 
+                       <input type="checkbox" name="mail" id="maile_ekle1">
+
+
+
+
+
+                </fieldset>
+                <br><br>
+        </div>
+        <div class="div1">   <input type="submit" value="Gönder"></div> <br> <br> <br>
+     
+      </div>
+    </form>
+  </body>
+</html>
